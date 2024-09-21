@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background-image: url('../images/Mars.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-links a, .contact-link a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+.hero-content > h1{
+    font-size: 10em;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+.cta-button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 40px;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cuisine-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.cuisine-item {
+    background-image: url(images/bgw.jpg);
+    background-size: cover;
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+}
+
+.cuisine-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cuisine-item p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.explore-button {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links, .contact-link {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+    }
+
+    .cuisine-item {
+        width: 100%;
+    }
+}

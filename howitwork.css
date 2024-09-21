@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #78b7f8;
+    padding: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.feature-content {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footnote {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.blue-bg {
+    background-color: #78b7f8;
+    color: white;
+}
+
+.dark-bg {
+    background-color: #1c1616;
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+    color: black;
+}
+
+.green-bg {
+    background-color: #5db55d;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .feature-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .feature-image {
+        max-width: 45%;
+        margin-bottom: 0;
+    }
+
+    .feature-content {
+        max-width: 45%;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}

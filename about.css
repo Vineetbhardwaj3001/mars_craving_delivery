@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background-image: url('../images/mars-tv-show-4k.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.nav-container a:hover::after {
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+.cravings {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.about-section h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p, .about-section ul {
+    margin-bottom: 1.5rem;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container a {
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .cravings {
+        font-size: 2.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cravings {
+        font-size: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+}
