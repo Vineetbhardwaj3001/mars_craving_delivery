@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us|Mars Cravings</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+  function subm(){
+    alert("Message sent successfully!");
+    location.href = "index.html";
+  }
+</script>
+<script src="https://kit.fontawesome.com/0c0a7769b3.js" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#sub{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#sub:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body style="background-color: grey;">
+<nav>
+	<center>
+		<div style="padding-top: 3vh; font-family: 'Josefin Sans';font-size:1.8vw; "id="outro">
+			<span style=" padding: 8vh;"><a href="index.html" id="nav">Home</a></span>
+			<span style=" padding: 8vh;"><a href="about.html" id="nav">About Us</a></span>
+			<span style=" padding: 8vh;"><a href="howitwork.html" id="nav">How it works</a></span>
+		</div>
+	</center>
+</nav>
+<main>
+	<h3 style="color: white;">Fill the form below for any query.</h3>
+	<p style="color: white;">Your detail will be secure with us... We will call you within 10 minutes after we got your message!</p>
+
+<div class="container">
+  <form>
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..   *Field mandatory*" required="">
+
+    <label for="lname">Contact Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your phone number..   *Field mandatory*" required="">
+
+    <label for="country">Location</label>
+    <select id="country" name="country" required="">
+      <option value="australia">Earth</option>
+      <option value="canada">Mars</option>
+      <option value="usa">Moon</option>
+      <option value="usa">ISS</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write your problem.." style="height:200px" required=""></textarea>
+
+    <span>
+    	<input type="button" id="sub" value="Submit" onclick="subm();">
+    </span>
+
+
+  </form>
+</div>
+</main>
+
+
+
+</body>
+</html>

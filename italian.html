@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;600&family=Niconne&family=Bebas+Neue&family=Raleway:wght@300;400&family=Righteous&family=Monofett&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c0a7769b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/indian.css">
+	<script src="Script/script.js"></script>
+	<style>
+		body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #outro {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 3vh;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #nav {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #check {
+            color: lightgreen;
+            font-size: 24px;
+            font-family: 'Slabo 27px', serif;
+            opacity: 0;
+        }
+        #deliver_pr {
+            font-family: 'Righteous', cursive;
+            border: solid 2px lightgreen;
+            background-color: lightgreen;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .tag1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .food1, .food2 {
+            background-image: url(images/download.jpg);
+            box-shadow: 0px 0px 5px black;
+            border-radius: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+        }
+        #image {
+            height: auto;
+            width: 80%;
+            max-width: 180px;
+            border-radius: 20px;
+            border: 2px ridge black;
+            box-shadow: 0px 0px 10px black;
+            margin-bottom: 20px;
+        }
+        .food-title {
+            font-size: 22px;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-bottom: 10px;
+        }
+        .food-description, .food-price {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            border-radius: 10px;
+            padding: 4px;
+            width: 100px;
+            font-family: 'Raleway', sans-serif;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            #outro {
+                flex-direction: column;
+                align-items: center;
+            }
+            #nav {
+                padding: 5px;
+            }
+            .heading h1 {
+                font-size: 24px;
+            }
+            #deliver_pr {
+                font-size: 16px;
+            }
+            .food-title {
+                font-size: 20px;
+            }
+            .food-description, .food-price {
+                font-size: 14px;
+            }
+        }
+	</style>
+</head>
+<body>
+    <nav id="outro">
+        <a href="index.html" id="nav">Home</a>
+        <a href="about.html" id="nav">About Us</a>
+        <a href="howitwork.html" id="nav">How it works</a>
+    </nav>
+
+    <div class="heading">
+        <h1>ITALIAN CUISINE</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <span id="check"><i class="fas fa-check"></i>Items will be delivered</span>
+        <button id="deliver_pr" onclick="deliver();">Deliver</button>
+    </div>
+
+    <div class="tag1">
+        <img src="images/1.1.jpg" id="image" alt="Panzenella">
+        <div class="food1">
+            <div class="food-title">Panzenella</div>
+            <div class="food-description">Tuscan Bread Salad, Apple Smoothy with some Marsian Swetners</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/2.1.jpg" id="image" alt="Bruschetta">
+        <div class="food2">
+            <div class="food-title">Bruschetta</div>
+            <div class="food-description">Grilled bread topped with veggies, Fico Bianco del Cilento Juice.</div>
+            <div class="food-price">₹ 5399 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/3.1.jpg" id="image" alt="Margherita Pizza">
+        <div class="food1">
+            <div class="food-title">Margherita Pizza</div>
+            <div class="food-description">Tomato, basil and fresh mozzarella combo pizza with Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/4.1.jpg" id="image" alt="Pasta Carbonara">
+        <div class="food1">
+            <div class="food-title">Pasta Carbonara</div>
+            <div class="food-description">Pasta with bacon; Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/5.1.jpg" id="image" alt="Lasagna">
+        <div class="food1">
+            <div class="food-title">Lasagna</div>
+            <div class="food-description">A lasagna with parmesan cheese and layered with a mix of vegies</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/6.1.jpg" id="image" alt="Pasta Con Pomodoro E Basilico">
+        <div class="food1">
+            <div class="food-title">Pasta Con Pomodoro E Basilico</div>
+            <div class="food-description">basic cooked pasta sauce with special Marsian herbs; Chilled Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>
